@@ -10,11 +10,11 @@ img {
   align-items: center;
 }
 .card__title {
-  font-size: 14px;
+  font-size: 10px;
   color: #282828;
 }
 .card__description {
-  font-size: 12px;
+  font-size: 10px;
   color: #282828;
 }
 .card {
@@ -34,12 +34,14 @@ footer {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 320px) {
-    /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (max-width: 768px) {
+    /* タブレット用レイアウト 600px以下の範囲に収めるデザインはこの中に記述 */
   }
-@media screen and (min-width: 768px) {
-  /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
-}
-@media screen and (min-width: 1200px) {
-    /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+@media screen and (max-width: 320px) {
+    /* スマホ用レイアウト 320px以下の範囲に収めるデザインはこの中に記述 */
+    .card-container {
+        display:none;
+        justify-content: center;
+        align-items: center;
     }
+  }
