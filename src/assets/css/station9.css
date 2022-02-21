@@ -51,10 +51,8 @@ footer {
   }
 @media screen and (max-width: 320px) {
     /* スマホ用レイアウト 320px以下の範囲に収めるデザインはこの中に記述 */
-    .card-container {
-        display:none;
-        justify-content: center;
-        align-items: center;
+    .card__description {
+        display: none;
     }
     .card__title {
         font-size: 10px;
